@@ -1,0 +1,39 @@
+Iniciar o projeto em react
+
+Utilizar React com TypeScript com Creat React App
+
+No terminal e dentro da pasta do projeto
+  -> npx create-react-app agenda-contatos --template typscript
+
+Criado o projeto, agora é necessário entrar na pasta do projeto
+  -> cd agenda-contatos
+
+Toda a estrutura de início está montada. Agora vamos copiar alguns arquivos
+de ferramentas para formatações de códigos e autenticadores de códigos.
+- Editor Config , - Prettier, - EsLint
+  Criar arquivo .editorconfig
+   1-> Editor Config = copia os scripts do arquivo do projeto do módulo anterior
+  Para o arquivo do eslint
+   2-> No terminal escrever = npx eslint@7.0.0 --init
+	2.1 Verificar sintaxe e achar problemas
+   	2.2 Utilizar JavaScript modules (import/export)
+	2.3 React
+	2.4 Usar TypeScript
+	2.5 Usar no Browser
+	2.6 Tipo de código de formatação do arquivo - JSON
+	2.7 Yes para instalar todas as dependências necessárias.
+	2.8 Utilizar a opção npm
+    3-> Instalar plugin do react hooks 
+	. npm install --save-dev eslint-plugin-react-hooks
+	. feito isso, podemos copiar o código json do eslint do projeto passado
+    4-> Instalar o plugin do prettier
+	. npm install --save-dev eslint-plugin-prettier eslint-config-prettier
+	. npm install --save-dev --savve-exact prettier
+	. criar o arquivo .prettierrc e copiar os scripts
+    5-> Criar uma pasta .vscode e dentro dela o arquivo settings.json e depois só 
+	colar os scripts
+
+ OBS: PARA AUTOMATIZAR AS CORREÇÕES DO PRETTIERRC QUANDO SE TEM AS FORMATAÇÕES SOLICITADAS
+ BASTA SOMENTE EXECUTAR O COMANDO -> npx prettier --write .\src\
+
+	Por fim só executar o npm start para começar a aplicação
